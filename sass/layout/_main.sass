@@ -1,0 +1,78 @@
+html, body
+  font-family: lato, sans-serif
+  color: $text-color
+  line-height: 160%
+.wrapper
+  min-height: 100%
+  width: 100%
+  overflow: hidden
+
+.container
+  max-width: 1260px
+  padding: 0 15px
+  margin: 0 auto
+  height: 100%
+
+.button
+  display: inline-block
+  letter-spacing: 0.5px
+  line-height: 3.25rem
+  padding: 0 2.5rem
+  color: $text-white
+  border-radius: 4px
+  background:  linear-gradient($gradient)
+  white-space: nowrap
+  transition: .3s
+  &:hover
+    transform: scale(1.05)
+  &--empty
+    border-left: 2px solid $gradient-color-1
+    border-right: 2px solid $gradient-color-2
+    background-image: -webkit-linear-gradient(left, $gradient-color-1, $gradient-color-2), -webkit-linear-gradient(left, $gradient-color-1, $gradient-color-2)
+    //background-image: linear-gradient(left, $gradient-color-1, $gradient-color-2), linear-gradient(left, $gradient-color-1, $gradient-color-2)
+    background-size: 100% 2px
+    background-position: 0 100%, 0 0
+    background-repeat: no-repeat
+    background-clip: border-box
+    & span
+      background: linear-gradient($gradient)
+      -webkit-background-clip: text
+      background-clip: text
+      -webkit-text-fill-color: transparent
+.heading 
+  color: $title-color
+  &__subtitle
+    font-weight: 700
+    font-size: 16px
+    line-height: 150%
+    letter-spacing: 1px
+    text-transform: uppercase
+  &__title 
+    display: inline-block
+    font-weight: 900
+    font-size: 46px
+    line-height: 170%
+    cursor: pointer
+    position: relative
+    &::after
+      content: ""
+      display: block
+      position: absolute
+      right: 0
+      bottom: -3px
+      width: 0
+      height: 2px
+      background-color: $title-color
+      transition: 0.5s
+    &:hover::after
+      content: ""
+      display: block
+      width: 100%
+      position: absolute
+      left: 0
+      bottom: -3px
+      width: 100%
+      height: 2px
+      background-color: $color-red
+      transition: 0.5s
+

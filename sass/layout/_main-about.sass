@@ -1,0 +1,59 @@
+.about 
+  margin-bottom: 160px
+  &::before
+    background: url('./images/decor/1.svg')
+  &__createx
+    display: flex
+    justify-content: space-between
+    margin-bottom: 180px
+    gap: 2rem
+  &__createx-content
+    max-width: 600px
+  &__heading
+    margin-bottom: 40px
+    
+  &__text
+    margin-bottom: 4.125rem
+  &__paragraph--accent
+    color: $title-color
+    font-weight: 700
+    font-size: 20px
+    line-height: 150%
+    margin-bottom: 1.5rem
+  &__btn
+    margin-right: 1.5rem  
+    &:last-child
+      margin-right: 0
+  &__img
+    transition: .5s  
+    &:hover         
+      transform: scale(1.2)
+  &__image-box
+    margin-right: 3rem 
+    overflow: hidden  
+    position: relative
+  &__image-main  
+    transition: 0.5s
+    &:hover         
+      transform: scale(1.6, 1.6) rotate(-20deg)    
+      filter: contrast(110%)
+  &__values 
+    display: flex
+    align-items: center
+    justify-content: space-between
+    font-weight: 700
+    font-size: 18px
+    line-height: 150%
+  &__numbers
+    margin-bottom: 20px
+    &:last-child
+      margin-bottom: 0
+  &__number
+    color: $title-color    
+    & > span
+      color: $color-red
+      font-weight: 900
+      font-size: 48px
+      line-height: 130%
+      letter-spacing: 1px
+      margin-right: 1rem
