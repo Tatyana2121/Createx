@@ -474,7 +474,7 @@ html, body {
   justify-content: space-between;
 }
 .cert__image-box {
-  margin-bottom: 3.125rem;
+  margin-bottom: -3.125rem;
 }
 .cert__image-box > img {
   border: 1px solid #E5E8ED;
