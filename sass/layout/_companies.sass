@@ -1,0 +1,26 @@
+.companies
+  background: $color-background-team
+  padding: 0 0 177px 0
+  &__inner
+    position: relative
+    &::before
+      content: ""
+      position: absolute
+      left: 7.5rem
+      bottom: 7.5rem
+      background: url("../images/decor/5.svg") 0 0 / 100% no-repeat
+      width: 90px
+      height: 90px     
+  &__heading
+    margin: 0 0 3.75rem 0
+  &__grid
+    display: grid
+    grid-template: repeat(2, 1fr) / repeat(6, 1fr)
+    gap: 40px 120px
+  &__grid-link
+    filter: grayscale(1)
+    opacity: .4
+    transition: all 1s
+    &:hover
+      filter: grayscale(0)
+      opacity: 1

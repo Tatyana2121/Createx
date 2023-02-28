@@ -1,0 +1,117 @@
+.testimonials 
+  background: $color-background-team
+  padding: 0 0 194px 0
+  position: relative
+  &::before
+    content: ""
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-44.9%, -55.4%)
+    background: url("../images/decor/testi-bg.svg") 0 0 / 100% no-repeat
+    width: 1971px
+    height: 816px
+  &__heading 
+    margin: 0 0 60px 0
+  &__slider-wrapper
+    padding: 0 50px
+    position: relative
+    margin-bottom: 40px
+  &__slider    
+    max-width: 1020px
+    margin: 0 auto
+  &__slide
+    background-color: $text-white
+    border-radius: 4px
+    padding: 64px 
+  &__slide-inner
+    max-width: 810px
+    margin: 0 auto
+    padding-left: 58px
+  &__quote
+    font-weight: 400
+    font-size: 1.25rem
+    line-height: 150%
+    margin: 0 0 1.5rem 0
+    position: relative
+    &::before
+      content: ""
+      background: url("../images/icons/quote-icon.svg")
+      width: 28px
+      height: 20px
+      position: absolute
+      left: -58px
+      top: 0
+  &__user 
+    display: flex
+    align-items: center
+  &__avatar
+    margin: 0 20px 0 0 
+  &__avatar img
+    border-radius: 100%
+  &__info-name
+    font-weight: 700
+    color: $title-color
+    margin: 0 0 4px 0
+  &__info-position
+    font-weight: 400
+    font-size: 0.875rem
+    line-height: 150%
+    color: $color-dark-grey
+  &__arrow 
+    position: absolute
+    top: 0
+    bottom: 0
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 50px
+    z-index: 1  
+    &:hover path
+      fill: $text-white
+      transition: all .3s
+    &::before
+      content: ""
+      position: absolute
+      width: 3rem
+      height: 3rem
+      border-radius: 50%
+      background-color: $color-red
+      z-index: -1
+      opacity: 0
+      transform: scale(0)
+      transition: all .3s
+    &:hover::before
+      opacity: 1
+      transform: scale(1)
+  &__prev 
+    left: 0
+  &__next 
+    right: 0
+  &__dots .slick-dots 
+    display: flex
+    justify-content: center
+    align-items: center
+  &__dots .slick-dots button
+    font-size: 0
+    background-color: transparent
+    width: 30px
+    height: 30px     
+  &__dots .slick-dots button::before
+    content: ""
+    height: 3px
+    width: 100%
+    border-top: 3px solid #B3B7BC
+    border-radius: 3px
+    display: flex
+  &__dots .slick-active button::before
+    content: ""
+    height: 3px
+    width: 100%
+    border-top: 3px solid $text-color
+    border-radius: 3px
+    display: flex
+  &__dots .slick-dots li
+    margin-right: 12px
+    &:last-child
+      margin-right: 0

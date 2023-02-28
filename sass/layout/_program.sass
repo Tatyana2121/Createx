@@ -1,0 +1,42 @@
+.program 
+  margin: 116px 0 186px 0
+  font-weight: 400
+  &__inner 
+    display: flex
+    justify-content: space-between
+  &__content
+    margin: 0rem 0rem 0rem 0rem
+  &__heading
+    margin: 0rem 0rem 3.75rem 0rem 
+  &__acc-item
+    margin: 0rem 0rem 1.5rem 0rem
+  &__acc-head
+    font-weight: 700
+    font-size: 20px
+    line-height: 150%
+    color: $title-color
+    margin: 0rem 0rem 1rem 0rem
+    padding: 0rem 0rem 0rem 2.5rem
+    position: relative
+    &::before, &::after
+      content: ""
+      position: absolute
+      top: 50%
+      left: 0
+      width: 20px
+      height: 2px
+      background-color: $color-red
+      border-radius: 2px
+    &::after
+      transform: rotate(90deg)
+    &::after .program__acc-link--active
+      transform: rotate(0deg)
+  &__acc-head span
+    font-size: 20px
+    line-height: 150%
+    color: $color-red
+    margin: 0rem 0.5rem 0rem 0rem
+  &__acc-text 
+    color: $text-color
+    max-width: 37.5rem
+    display: none
