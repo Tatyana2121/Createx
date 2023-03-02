@@ -1,5 +1,5 @@
 .program 
-  margin: 116px 0 186px 0
+  margin: 7.25rem 0 11.625rem 0
   font-weight: 400
   &__inner 
     display: flex
@@ -12,7 +12,7 @@
     margin: 0rem 0rem 1.5rem 0rem
   &__acc-head
     font-weight: 700
-    font-size: 20px
+    font-size: 1.25rem
     line-height: 150%
     color: $title-color
     margin: 0rem 0rem 1rem 0rem
@@ -23,16 +23,18 @@
       position: absolute
       top: 50%
       left: 0
-      width: 20px
+      width: 1.25rem
       height: 2px
       background-color: $color-red
       border-radius: 2px
     &::after
       transform: rotate(90deg)
-    &::after .program__acc-link--active
-      transform: rotate(0deg)
+  &__acc-link--active .program__acc-head::after
+    transform: rotate(0deg)
+  &__acc-link--active .program__acc-text
+    display: block
   &__acc-head span
-    font-size: 20px
+    font-size: 1.25rem
     line-height: 150%
     color: $color-red
     margin: 0rem 0.5rem 0rem 0rem
@@ -40,3 +42,6 @@
     color: $text-color
     max-width: 37.5rem
     display: none
+    margin: 0rem 0rem 0rem 2.5rem
+  &__image
+    padding: 5rem 0rem 0rem 0rem

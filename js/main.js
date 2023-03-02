@@ -4,7 +4,6 @@ $(function () {
     $('.directions__filter-btn').removeClass('directions__filter-btn--active')
     $(this).addClass('directions__filter-btn--active')
   })
-
   $('.team__slider').slick({
     arrows: false,
     slidesToShow: 4,
@@ -24,8 +23,7 @@ $(function () {
   $('.testimonials__slider').slick({
     arrows: false,
     slidesToShow: 1,
-    slidesToScroll: 1,
-    draggable: false,
+    slidesToScroll: 1,  
     waitForAnimate: false,
     dots: true,
     appendDots: $('.testimonials__dots'),
