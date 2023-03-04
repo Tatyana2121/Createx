@@ -1,0 +1,76 @@
+.info 
+  margin: 0rem 0rem 11.25rem 0rem
+  &__inner
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+  &__content
+    margin: 0rem 2rem 0rem 0rem
+  &__heading
+    margin: 0rem 0rem 2.5rem 0rem
+  &__contacts
+    margin: 0rem 0rem 3rem 0rem
+  &__contacts-item 
+    margin: 0rem 0rem 1.5rem 0rem
+    padding: 0rem 0rem 0rem 2.25rem
+    position: relative
+    &:last-child
+      margin: 0rem 0rem 0rem 0rem
+    &::before
+      content: ""
+      position: absolute
+      top: 0
+      left: 0
+  &__mail 
+    &::before
+      width: 22px
+      height: 20px
+      background: url("../images/icons/chat-icon.svg") 0 0 / 100% no-repeat
+  &__item-top
+    font-weight: 700
+    font-size: 14px
+    line-height: 150%
+    color: $color-dark-grey
+  &__item-link
+    font-weight: 400
+    font-size: 18px
+    line-height: 150%
+    color: $title-color
+  &__tel 
+    &::before
+      width: 14px
+      height: 22px
+      background: url("../images/icons/phone-icon.svg") 0 0 / 100% no-repeat
+  &__address
+    &::before
+      width: 17px
+      height: 22px
+      background: url("../images/icons/mark-icon.svg") 0 0 / 100% no-repeat
+  &__item-address 
+    font-weight: 400
+    font-size: 18px
+    line-height: 150%
+    color: $title-color
+  &__follow-head 
+    font-weight: 700
+    line-height: 150%
+    letter-spacing: 1px
+    text-transform: uppercase
+    color: $title-color
+  &__socials 
+    display: flex
+  &__socials-item
+    margin: 0rem 2rem 0rem 0rem 
+    &:last-child
+      margin: 0rem 0rem 0rem 0rem
+  &__socials-link
+    & path
+      transition: .5s
+    &:hover path 
+      fill: $color-red
+  &__map 
+    height: 100%
+    width: 100%
+    max-width: 705px
+    border-radius: 4px
+    overflow: hidden
