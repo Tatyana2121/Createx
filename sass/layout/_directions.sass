@@ -26,8 +26,10 @@
   &__filter-box
     display: flex
     margin-bottom: 3.5rem
+    flex-wrap: wrap
   &__filter-item
     margin-right: 2.875rem
+    margin-bottom: 1.5rem
     &:last-child
       margin-right: 0
   &__filter-btn
@@ -119,3 +121,22 @@
       margin-left: .75rem
 .heading--text-center
   text-align: center
+
+@media ( max-width: 900px)
+  .directions
+    padding-bottom: 9rem
+@media ( max-width: 700px)
+  .directions
+    &__list 
+      grid-template: repeat(3, auto) / repeat(2, 1fr)
+    &__filter-box
+      margin-bottom: 1.5rem
+
+@media ( max-width: 550px)
+  .directions
+    &__filter-item
+      margin-right: 1.5rem
+    &__list 
+      grid-template: none
+    &__list-item--empty
+      display: none

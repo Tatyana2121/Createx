@@ -1,5 +1,5 @@
 .about 
-  margin-bottom: 160px
+  margin-bottom: 10rem
   &::before
     background: url('./images/decor/1.svg')
   &__createx
@@ -32,6 +32,9 @@
     margin-right: 3rem 
     overflow: hidden  
     position: relative
+    & img
+      width: 100%
+      object-fit: contain
   &__image-main  
     transition: 0.5s
     &:hover         
@@ -57,3 +60,48 @@
       line-height: 130%
       letter-spacing: 1px
       margin-right: 1rem
+
+
+@media ( max-width: 1000px)
+  .about
+    &__img
+      width: 46%
+@media ( max-width: 900px)
+  .about
+    &__createx
+      flex-direction: column-reverse
+      align-items: center
+      gap: 1rem
+      margin-bottom: 8rem
+    &__createx-content
+      max-width: 70vw      
+    &__img
+      max-width: 28%
+      align-self: end
+      margin-bottom: -9rem
+    &__image-box
+      margin-right: 1rem
+@media ( max-width: 700px)
+  .about
+    margin-bottom: 6rem
+    &__createx
+      margin-bottom: 7rem
+    &__btn
+      margin-bottom: 1rem
+      &:last-child
+        margin-bottom: 0
+    &__values 
+      flex-direction: column
+      align-items: center
+    &__image-box
+      display: none
+
+@media ( max-width: 550px)
+  .about  
+    &__img
+      display: none
+    
+@media ( max-width: 400px)
+  .about
+    &__heading
+      margin-bottom: 1.5rem

@@ -43,14 +43,14 @@ html, body
   color: $title-color
   &__subtitle
     font-weight: 700
-    font-size: 16px
+    font-size: 1rem
     line-height: 150%
     letter-spacing: 1px
     text-transform: uppercase
   &__title 
     display: inline-block
     font-weight: 900
-    font-size: 46px
+    font-size: 2.875rem
     line-height: 170%
     cursor: pointer
     position: relative
@@ -75,4 +75,18 @@ html, body
       height: 2px
       background-color: $color-red
       transition: 0.5s
+  @media ( max-width: 1000px)
+    .heading
+      &__subtitle
+        margin-bottom: 1rem
+      &__title 
+        max-width: 78%
+        line-height: 130%
+  
+  @media ( max-width: 550px)
+    html, body
+      font-size: 14px
+  @media ( max-width: 400px)
+    html, body
+      font-size: 10px
 
