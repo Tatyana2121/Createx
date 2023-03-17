@@ -2,6 +2,11 @@ html, body
   font-family: lato, sans-serif
   color: $text-color
   line-height: 160%
+  font-size: 16px
+  @media (max-width: 550px)
+    font-size: 14px 
+  @media (max-width: 400px)
+    font-size: 12px 
 .wrapper
   min-height: 100%
   width: 100%
@@ -83,10 +88,11 @@ html, body
         max-width: 78%
         line-height: 130%
   
-  @media ( max-width: 550px)
+  @media screen and  ( max-width: 550px)
     html, body
-      font-size: 14px
-  @media ( max-width: 400px)
-    html, body
-      font-size: 10px
+      font-size: 14px  
+    .heading
+      &__title 
+        font-size: 2rem
 
+    

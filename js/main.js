@@ -9,7 +9,29 @@ $(function () {
     slidesToShow: 4,
     slidesToScroll: 1,
     draggable: false,
-    waitForAnimate: false
+    waitForAnimate: false,
+    responsive: [
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 750,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 550,
+        settings: {
+          centerMode: true,
+          slidesToShow: 1,
+
+        }
+      }
+    ]
   })
   $('.team__slider-prev').on('click', function(e) {
     e.preventDefault(),

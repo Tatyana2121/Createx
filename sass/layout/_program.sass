@@ -5,7 +5,8 @@
     display: flex
     justify-content: space-between
   &__content
-    margin: 0rem 0rem 0rem 0rem
+    margin: 0rem 7rem 0rem 0rem
+
   &__heading
     margin: 0rem 0rem 3.75rem 0rem 
   &__acc-item
@@ -45,3 +46,31 @@
     margin: 0rem 0rem 0rem 2.5rem
   &__image
     padding: 5rem 0rem 0rem 0rem
+    width: max-content
+    margin: 0
+    & img
+      width: 40vw
+      object-fit: contain
+      display: block
+      margin-left: auto
+
+@media ( max-width: 1100px)
+  .program 
+    &__inner 
+      align-items: center
+    &__content
+      margin: 0rem 3rem 0rem 0rem
+    &__image
+    & img
+      width: 40vw
+@media ( max-width: 900px)
+  .program 
+    &__inner
+      width: 85vw
+      margin: 0 auto
+    &__content
+      margin: 0rem 0rem 0rem 0rem
+    &__image
+      display: none
+    &__acc-item
+      width: inherit

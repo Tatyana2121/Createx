@@ -1,6 +1,6 @@
 .companies
   background: $color-background-team
-  padding: 0 0 177px 0
+  padding: 0 0 11rem 0
   &__inner
     position: relative
     &::before
@@ -16,7 +16,8 @@
   &__grid
     display: grid
     grid-template: repeat(2, 1fr) / repeat(6, 1fr)
-    gap: 40px 120px
+    justify-items: center
+    gap: 2.5rem 5%
   &__grid-link
     filter: grayscale(1)
     opacity: .4
@@ -24,3 +25,18 @@
     &:hover
       filter: grayscale(0)
       opacity: 1
+
+
+@media ( max-width: 1000px)
+  .companies
+    padding: 0 0 7rem 0
+    &__grid 
+      grid-template: repeat(3, auto) / repeat(4, 1fr)
+@media ( max-width: 700px)
+  .companies
+    &__grid 
+      grid-template: repeat(4, auto) / repeat(3, 1fr)
+@media ( max-width: 550px)
+  .companies
+    &__grid 
+      grid-template: repeat(6, auto) / repeat(2, 1fr)
