@@ -74,5 +74,6 @@ $(function () {
   })
   $('.footer__top-title--slide').on('click', function () {
     $(this).next().slideToggle()
+    $('.footer__top-col').toggleClass('.footer__top-title--arrow')
   })
 })

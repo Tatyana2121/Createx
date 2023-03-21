@@ -124,12 +124,11 @@ html, body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center;
   margin-bottom: 11.25rem;
 }
 .header__top-inner {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding: 1.25rem 0;
   margin: 0rem 0rem 6rem 0rem;
@@ -1896,13 +1895,18 @@ html, body {
     -webkit-clip-path: polygon(50% 0, 0% 100%, 100% 100%);
             clip-path: polygon(50% 0, 0% 100%, 100% 100%);
   }
+  .footer__top-list {
+    display: none;
+  }
   .footer__top-col:last-child .footer__top-title::after {
     display: none;
   }
   .footer__top-title--slide {
     pointer-events: auto;
   }
-  .footer__top-title--slide .footer__top-title::after {
+  .footer__top-title--arrow .footer__top-title::after {
+    -webkit-clip-path: polygon(50% 0, 0% 100%, 100% 100%);
+            clip-path: polygon(50% 0, 0% 100%, 100% 100%);
     transform: rotate(180deg);
   }
   .footer__bottom-inner {
