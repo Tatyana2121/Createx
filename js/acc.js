@@ -19,4 +19,26 @@ acc.forEach((box) => {
     }
   })
 })
-  
+
+
+const accFooter = Array.from(document.querySelectorAll(".footer__top-col")); // считываем все элементы аккордеона в массив
+function clearActiveItemMenu(){
+	accFooter.forEach(function(box){
+    if(box.classList.contains('footer__top-title--arrow')){
+      box.classList.remove('footer__top-title--arrow');
+    }
+  });
+}
+accFooter.forEach((box) => {
+  box.addEventListener("click", function(e) {
+    e.preventDefault();
+    if (box.classList.contains("footer__top-title--arrow")) {
+      console.log('del');
+      box.classList.remove("footer__top-title--arrow");
+    } else {
+      console.log('add');
+      clearActiveItemMenu();
+      box.classList.add("footer__top-title--arrow");
+    }
+  })
+})

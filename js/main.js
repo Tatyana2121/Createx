@@ -71,9 +71,6 @@ $(function () {
     $('.header__top').toggleClass('header__top--open')
     $('.burger').toggleClass('burger--close')
     $('.overlay').toggleClass('overlay--show')
-  })
-  $('.footer__top-title--slide').on('click', function () {
-    $(this).next().slideToggle()
-    $('.footer__top-col').toggleClass('.footer__top-title--arrow')
-  })
+  })  
+
 })

@@ -151,14 +151,20 @@
         height: 10px
         background-color: $text-white
         clip-path: polygon(50% 0, 0% 100%, 100% 100%)
+        transition: .8s
     &__top-list
       display: none
+    &__top-title--arrow .footer__top-list
+      display: block
     &__top-col:last-child .footer__top-title::after
       display: none
-    &__top-title--slide
+    &__top-title--arrow 
       pointer-events: auto
     &__top-title--arrow .footer__top-title::after
       transform: rotate(180deg)
+      
+    &__top-title--arrow .footer__top-list--active
+      display: block
     &__bottom-inner
       flex-direction: column-reverse
       text-align: center
